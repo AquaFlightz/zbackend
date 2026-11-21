@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_TBL_SUPPL_TEXT'
+@MappingRole: true
+define role ZR_TBL_SUPPL_TEXT {
+  grant select on ZR_TBL_SUPPL_TEXT
+  where TRUE;
+}

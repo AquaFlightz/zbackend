@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_TBL_SUPPL_TEXT'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_TBL_SUPPL_TEXT'
+  }
+}
+define service ZAPI_BACKEND_O4 provider contracts odata_v4_webapi {
+  expose ZC_TBL_SUPPL_TEXT;
+}
