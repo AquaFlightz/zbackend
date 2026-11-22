@@ -1,0 +1,30 @@
+managed implementation in class ZBP_R_TBL_SUPPL_TEXT unique;
+strict ( 2 );
+extensible;
+define behavior for ZR_TBL_SUPPL_TEXT alias ZrTblSupplText
+persistent table ZTBL_SUPPL_TEXT
+extensible
+lock master
+authorization master( global )
+{
+  field ( mandatory : create )
+   SupplID,
+   LanguageCode;
+
+  field ( readonly : update )
+   SupplID,
+   LanguageCode;
+
+
+  create;
+  update;
+  delete;
+
+  mapping for ZTBL_SUPPL_TEXT corresponding extensible
+  {
+    SupplID = SUPPL_ID;
+    LanguageCode = LANGUAGE_CODE;
+    Description = DESCRIPTION;
+  }
+
+}

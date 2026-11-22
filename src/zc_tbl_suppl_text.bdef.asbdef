@@ -1,0 +1,12 @@
+projection implementation in class ZBP_C_TBL_SUPPL_TEXT unique;
+strict ( 2 );
+extensible;
+use side effects;
+define behavior for ZC_TBL_SUPPL_TEXT alias ZcTblSupplText
+extensible
+{
+  use create;
+  use update;
+  use delete;
+
+}

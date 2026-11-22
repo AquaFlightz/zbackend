@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_TBL_SUPPL_TEXT'
+@MappingRole: true
+define role ZC_TBL_SUPPL_TEXT {
+  grant select on ZC_TBL_SUPPL_TEXT
+  where INHERITING CONDITIONS FROM ENTITY ZR_TBL_SUPPL_TEXT REPLACING { ROOT WITH _BaseEntity };
+}
